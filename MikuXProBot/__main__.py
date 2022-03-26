@@ -57,10 +57,10 @@ buttons = [
     [
                         InlineKeyboardButton(
                              text="🏹 Summon Me",
-                             url="https://t.me/MikuXProBot?startgroup=true"),
+                             url="https://t.me/AVIVEKBOT?startgroup=true"),
                         InlineKeyboardButton(
                              text="🗞️ Repo",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             url=""),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -81,7 +81,7 @@ HELP_STRINGS = """
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
+For all command use /* [or](https://te.legra.ph/file/1b44fb4780b4dd089b069.jpg) *!*
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
