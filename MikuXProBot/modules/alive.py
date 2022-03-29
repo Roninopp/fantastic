@@ -18,10 +18,10 @@ from pyrogram import __version__ as pyro
 
 edit_time = 5
 """ =======================CONSTANTS====================== """
-file1 = "https://te.legra.ph/file/9012a958e07362727ae19.jpg"
-file2 = "https://te.legra.ph/file/9012a958e07362727ae19.jpg"
-file3 = "https://te.legra.ph/file/9012a958e07362727ae19.jpg"
-file4 = "https://te.legra.ph/file/9012a958e07362727ae19.jpg"
+file1 = "https://te.legra.ph/file/fb8584c4d654cc4aa4f24.jpg"
+file2 = "https://telegra.ph/file/7f4a6de580ab6c1a6e57e.jpg"
+file3 = "https://telegra.ph/file/827fb45192c16e07c9af1.jpg"
+file4 = "https://te.legra.ph/file/fb8584c4d654cc4aa4f24.jpg"
 """ =======================CONSTANTS====================== """
 
 START_TIME = datetime.utcnow()
@@ -85,5 +85,5 @@ async def hmm(yes):
 @register(pattern=("/repo"))
 async def repo(event):
     Miku = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
-    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/liu_WULANG_MONKES"), Button.url("[► Repo ◄]", "https://github.com/h0daka/Miku-Nakano")]]
-    await borg.send_file(event.chat_id, file="https://te.legra.ph/file/9012a958e07362727ae19.jpg", caption=fantastic, buttons=BUTTON)
+    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/liu_WULANG_MONKES"), Button.url("[► Owner ◄]", "https://t.me/dushmanxronin")]]
+    await borg.send_file(event.chat_id, file="https://telegra.ph/file/7f4a6de580ab6c1a6e57e.jpg", caption=fantastic, buttons=BUTTON)
