@@ -1,5 +1,5 @@
 ![Miku](https://te.legra.ph/file/9012a958e07362727ae19.jpg)
-# 𝓜𝓲𝓴𝓾 𝓝𝓪𝓴𝓪𝓷𝓸
+# Fantastic
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
 </h3>
@@ -27,7 +27,7 @@
 + [x] Heroku Deploy
 + [x] Docker/Local Machine
 
-╘══「 Can be found on telegram as [Miku Nakano](https://t.me/Mikuxprobot) 」
+╘══「 Can be found on telegram as [Miku Nakano](https://t.me/fantasticFighterbot) 」
 
 ![Miku](https://telegra.ph/file/9d78988131658606a3d57.jpg)
 
@@ -57,7 +57,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 	
   <h1>
     <p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/Roninopp/Miku-Nakano">
+        <a href="https://heroku.com/deploy?template=https://github.com/Roninopp/fantastic">
             <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
         </a>
     </p>
