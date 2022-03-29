@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/FANTASTICFIGHTERBOT?start=health"),
+                             url="https://t.me/Ronin_Fighters_Fd?start=health"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/FANTASTICFIGHTERBOT?start=disasters"),
+                             url="https://t.me/RoninXJin_updates?start=disasters"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -475,8 +475,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="github.com/H0daka/Miku-Nakano")
+                             text="Owner",
+                             url="https://t.me/Dushmanxronin")
                      ] 
                 ]
             ),
@@ -498,8 +498,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="github.com/H0daka/Miku-Nakano")
+                             text="Ot",
+                             url="https://t.me/liu_WULANG_MONKES")
                      ] 
                 ]
             ),
