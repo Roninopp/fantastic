@@ -29,7 +29,7 @@
 
 ╘══「 Can be found on telegram as [Miku Nakano](https://t.me/fantasticFighterbot) 」
 
-![Miku](https://telegra.ph/file/9d78988131658606a3d57.jpg)
+![Miku](https://te.legra.ph/file/9012a958e07362727ae19.jpg)
 
 ### ╒═══「 Creator Info/Credits 」
 
