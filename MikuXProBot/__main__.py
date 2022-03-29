@@ -59,8 +59,8 @@ buttons = [
                              text="🏹 Summon Me",
                              url="https://t.me/FANTASTICFIGHTERBOT?startgroup=true"),
                         InlineKeyboardButton(
-                             text="🗞️ Repo",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             text="update channel 🕶️",
+                             url="https://t.me/liu_WULANG_MONKES"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -68,7 +68,7 @@ buttons = [
                              callback_data="help_back"),
                         InlineKeyboardButton(
                              text=" 💫 About Me",
-                             callback_data="miku_"),
+                             callback_data="Ronin_"),
                     ], 
     ]
 
