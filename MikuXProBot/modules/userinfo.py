@@ -272,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Collecting information by Ronin....</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b>• Appraisal results •</b> 」\n"
+        f"╒═══「<b>• Appraisal results By fantastic •</b> 」\n"
         f"• ID: <code>{user.id}</code>\n"
         f"• First Name: {html.escape(user.first_name)}"
     )
@@ -335,7 +335,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
     elif user.id == 5291415314:
          text += "\n\nCo-Owner Of A Bot."
-         disaster_level_present = True
+         disaster_level_present = False
 
 
     try:
@@ -486,7 +486,7 @@ def stats(update, context):
             (
                 (
                     (
-                        "\n*Bot statistics*:\n"
+                        "\n*Bot statistics Powered by Fantastic manager*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
                     + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/MikuXUpdates)\n\n"
