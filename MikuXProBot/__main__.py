@@ -68,7 +68,7 @@ buttons = [
                              callback_data="help_back"),
                         InlineKeyboardButton(
                              text=" 💫 About Me",
-                             callback_data="Ronin_"),
+                             callback_data="miku_"),
                     ], 
     ]
 
@@ -368,7 +368,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_photo(
-            random.choice(MIKU_N_IMG), caption= f"Oh Darling, Click the Button Below to get help of {module.capitalize()}",
+            random.choice(MIKU_N_IMG), caption= f"Oh, Click the Button Below to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="click here",
