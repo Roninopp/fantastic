@@ -48,7 +48,7 @@ from MikuXProBot.modules.helper_funcs.chat_status import sudo_plus
 from MikuXProBot.modules.helper_funcs.extraction import extract_user
 from MikuXProBot import telethn
 
-MIKU_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
+MIKU_IMG = "https://te.legra.ph/file/9012a958e07362727ae19.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -240,10 +240,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/MikuXproBot?start=health"),
+                             url="https://t.me/FANTASTICFIGHTERBOT?start=health"),
                        InlineKeyboardButton(
                              text="Disasters",
-                             url="https://t.me/MikuXproBot?start=disasters"),
+                             url="https://t.me/FANTASTICFIGHTERBOT?start=disasters"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -269,7 +269,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Collecting information by Ronin....</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b>• Appraisal results •</b> 」\n"
@@ -464,12 +464,12 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            MIKU_IMG,
+            Fantastic_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/MikuXUpdates)\n\n"
-            + "\n╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/liu_WULANG_MONKES)\n\n"
+            + "\n╘══「 by [Ronin](https://t.me/Dushmanxronin) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -491,7 +491,7 @@ def stats(update, context):
                     )
                     + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/MikuXUpdates)\n\n"
                 )
-                + "╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n"
+                + "╘══「 by [Ronin](https://t.me/Dushmanxronin) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
