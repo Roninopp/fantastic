@@ -598,7 +598,7 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="[► Summon Me◄]",
-                             url="https://t.me/https://t.me/liu_WULANG_MONKES?startgroup=true")
+                             url="https://t.me/https://t.me/FANTASTICFIGHTERBOT?startgroup=true")
                      ] 
                 ]
             ),
