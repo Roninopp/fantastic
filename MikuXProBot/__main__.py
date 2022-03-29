@@ -16,7 +16,7 @@ from MikuXProBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
 from MikuXProBot.modules import ALL_MODULES
 from MikuXProBot.modules.helper_funcs.chat_status import is_user_admin
 from MikuXProBot.modules.helper_funcs.misc import paginate_modules
-from MikuXProBot.script import PM_START_TEXT, MIKU_DISPACHER_PIC, PM_PHOTO, MIKU_N_IMG, TEXXT, MIKU_IMG
+from MikuXProBot.script import PM_START_TEXT, Fantastic_DISPACHER_PIC, PM_PHOTO, Fantastic_N_IMG, TEXXT, Fantastic_IMG
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -59,7 +59,7 @@ buttons = [
                              text="🏹 Summon Me",
                              url="https://t.me/FANTASTICFIGHTERBOT?startgroup=true"),
                         InlineKeyboardButton(
-                             text="update channel 🕶️",
+                             text="UPDATE CHANNEL",
                              url="https://t.me/liu_WULANG_MONKES"),
                     ],
                    [                  
@@ -99,7 +99,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("MikuXProBot.modules." +
+    imported_module = importlib.import_module("Fantastic.modules." +
                                               module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
@@ -323,7 +323,7 @@ def miku_callback_data(update, context):
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
                  \n❍ Miku licensed under the GNU General Public License v3.0
-                 \n❍ If you have any question about Miku, let us know at [Miku Support](t.me/{SUPPORT_CHAT}).""",
+                 \n❍ If you have any question about Miku, let us know at [Fantastic](t.me/{SUPPORT_CHAT}).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -378,7 +378,7 @@ def get_help(update: Update, context: CallbackContext):
             return
 
         update.effective_message.reply_photo(
-            random.choice(MIKU_N_IMG), caption= "Click the Button Below to get the list of possible commands.",
+            random.choice(Fantastic_N_IMG), caption= "Click the Button Below to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
