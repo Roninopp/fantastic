@@ -316,19 +316,19 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\nThe Disaster level of this person is 'God'."
+        text += "\n\nThe Disaster level of this person is 'kING OF SAMURAI'."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\nThis user is member of 'Heros Association'."
+        text += "\n\nThis user is member of 'Fantastic Fans '."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\nThe Disaster level of this person is 'Dragon'."
+        text += "\n\nThe Disaster level of this person is 'LORD DEMON'."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\nThe Disaster level of this person is 'Demon'."
+        text += "\n\nThe Disaster level of this person is 'The KING OF TIGER'."
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\nThe Disaster level of this person is 'THE KING OF WOLVES'."
         disaster_level_present = True
     elif user.id in WOLVES:
         text += "\n\nThe Disaster level of this person is 'Wolf'."
@@ -499,7 +499,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="POWERED BY",
-                             url="https://t.me/liu_WULANG_MONKES")
+                             url="https://t.me/RoninXJin_updates")
                      ] 
                 ]
             ),
