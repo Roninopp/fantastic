@@ -50,31 +50,38 @@ def can_manage_voice_chats(chat: Chat, user: User, bot_id: int) -> bool:
 def user_can_pin(chat: Chat, user: User, bot_id: int) -> bool:
     return chat.get_member(user.id).can_pin_messages
 
+def fuck_channel(update:Update, user_id: int, member: ChatMember = None) -> bool:
+    message = update.effective_message
+    if (
+        message.sender_chat is not None and message.sender_chat.type != "channel"
+    ):
+        return True
+
 def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
     if (
         chat.type == "private"
         or user_id in DRAGONS
         or user_id in DEV_USERS
         or chat.all_members_are_administrators
-        or user_id in {777000, 1087968824}
-    ):  # Count telegram and Group Anonymous as admin
+        or user_id in [777000, 1087968824]
+    ) and fuck_channel:  # Count telegram and Group Anonymous as admin
         return True
-    if member:
+    if not member:
+        with THREAD_LOCK:
+            # try to fetch from cache first.
+            try:
+                return user_id in ADMIN_CACHE[chat.id]
+            except KeyError:
+                # keyerror happend means cache is deleted,
+                # so query bot api again and return user status
+                # while saving it in cache for future useage...
+                chat_admins = dispatcher.bot.getChatAdministrators(chat.id)
+                admin_list = [x.user.id for x in chat_admins]
+                ADMIN_CACHE[chat.id] = admin_list
+
+                return user_id in admin_list
+    else:
         return member.status in ("administrator", "creator")
-
-    with THREAD_LOCK:
-        # try to fetch from cache first.
-        try:
-            return user_id in ADMIN_CACHE[chat.id]
-        except KeyError:
-            # keyerror happend means cache is deleted,
-            # so query bot api again and return user status
-            # while saving it in cache for future useage...
-            chat_admins = dispatcher.bot.getChatAdministrators(chat.id)
-            admin_list = [x.user.id for x in chat_admins]
-            ADMIN_CACHE[chat.id] = admin_list
-
-            return user_id in admin_list
 
 
 def is_bot_admin(chat: Chat, bot_id: int, bot_member: ChatMember = None) -> bool:
