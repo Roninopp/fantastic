@@ -205,7 +205,7 @@ def gban(update: Update, context: CallbackContext):
     [
                        InlineKeyboardButton(
                              text="Appeal chat 🏬",
-                             url="https://t.me/Mikussupport"),
+                             url="https://t.me/liu_WULANG_MONKES"),
                     ], 
     ]
 
@@ -490,7 +490,7 @@ def check_and_ban(update, user_id, should_message=True):
     [
                        InlineKeyboardButton(
                              text="Appeal chat 🏬",
-                             url="https://t.me/Mikussupport"),
+                             url="https://t.me/liu_WULANG_MONKES"),
                     ], 
     ]
             user = sql.get_gbanned_user(user_id)
