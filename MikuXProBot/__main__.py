@@ -56,7 +56,7 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🏹 Summon Me",
+                             text="ADD Me YOUR GROUP TO SHOW MY POWERS",
                              url="https://t.me/FANTASTICFIGHTERBOT?startgroup=true"),
                         InlineKeyboardButton(
                              text="UPDATE CHANNEL",
