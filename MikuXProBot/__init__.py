@@ -256,8 +256,8 @@ BOT_USERNAME = bottie.username
 BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
-if "@DushmanXRonin" not in PM_START_TEXT:
-    LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Owner:- @DushmanXRonin` In PM_START_TEXT To Fix This")
+if "@liu_WULANG_MONKES" not in PM_START_TEXT:
+    LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Support:- @liu_WULANG_MONKES` In PM_START_TEXT To Fix This")
     sys.exit(1)
 else:
     LOGGER.info("Your Bot Is Ready")
